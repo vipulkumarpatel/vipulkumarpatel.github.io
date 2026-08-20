@@ -1307,3 +1307,198 @@ div.job-posting {
 div.margin-top-50 {
     margin-top: 50px;
 }
+
+/* Dual audience additions: hero CTAs, service groups, employer callout, team groups */
+.hero_content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero_cta_group {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero_cta_group .btn {
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.hero_cta_group .btn-primary {
+    background-color: #0f73ee;
+    border-color: #0f73ee;
+    color: #fff;
+}
+
+.hero_cta_group .btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid #0f73ee;
+    color: #0f73ee;
+}
+
+.hero_cta_group .btn-outline-primary:hover {
+    background-color: #0f73ee;
+    color: #fff;
+}
+
+.service_group_title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.service_group_title h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid;
+}
+
+.service_group_divider {
+    margin: 50px 0 10px;
+}
+
+.employer_callout {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.employer_callout h3 {
+    margin-bottom: 15px;
+}
+
+.team_group_title {
+    text-align: center;
+    margin: 40px 0 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team_group_title:first-of-type {
+    margin-top: 0;
+}
+
+/* Service tabs + list/accordion UI */
+.service_tabs {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.service_tabs .nav-link {
+    border: none;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6c7a93;
+}
+
+.service_tabs .nav-link.active {
+    color: #0f73ee;
+    background: transparent;
+    border-bottom: 3px solid #0f73ee;
+}
+
+.service_list {
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.service_list_item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.service_list_header {
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service_list_header:hover {
+    color: #0f73ee;
+    text-decoration: none;
+}
+
+.service_list_icon {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    margin-right: 20px;
+}
+
+.service_list_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.service_list_title {
+    flex: 1 1 auto;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.service_list_caret {
+    flex: 0 0 auto;
+    font-size: 12px;
+    color: #6c7a93;
+    transition: transform 0.2s ease;
+}
+
+.service_list_header[aria-expanded="true"] .service_list_caret {
+    transform: rotate(180deg);
+}
+
+.service_list_body {
+    padding: 0 10px 20px 76px;
+}
+
+.service_list_body p {
+    margin: 0;
+}
+
+/* Homepage service cards/titles link into the Services page */
+.service_item_link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.service_item_link:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.service_item_link:hover .service_item {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    transition: all 0.2s ease;
+}
+
+.service_group_link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.service_group_link:hover {
+    color: #0f73ee;
+    text-decoration: none;
+}
