@@ -8,13 +8,13 @@
 
         <!-- Meta -->
         <meta charset="UTF-8">
-        <meta name="description" content="Aanvi InfoPharma Inc. - IT Solutions for Your Business Services">
+        <meta name="description" content="Aanvi InfoPharma Inc. - IT Solutions and IT Staffing & Recruiting">
         <meta name="keywords"
             content="bootstrap, clean, responsive, html5, css3, portfolio, blog, carousel, parallax, grid, coming soon, themeforest">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:type" content="Aanvi InfoPharma Inc. - IT Solutions for Your Business Services" />
-        <meta property="og:title" content="Aanvi InfoPharma Inc. - IT Solutions for Your Business Services" />
-        <meta property="og:description" content="Aanvi InfoPharma Inc. - IT Solutions for Your Business Services" />
+        <meta property="og:type" content="Aanvi InfoPharma Inc. - IT Solutions and IT Staffing & Recruiting" />
+        <meta property="og:title" content="Aanvi InfoPharma Inc. - IT Solutions and IT Staffing & Recruiting" />
+        <meta property="og:description" content="Aanvi InfoPharma Inc. - IT Solutions and IT Staffing & Recruiting" />
         <meta property="og:image" content="http://themefriend.com/Innovax/img/template/MainBanner.jpg" />
         <meta property="og:url" content="http://themefriend.com/Innovax/" />
         <meta property="og:site_name" content="Aanvi InfoPharma Inc." />
@@ -124,73 +124,144 @@
                     <div class="col-md-6 col-center mb60 textCenter">
                         <h2 class="heading mb20 wow fadeInUp">Our Services</h2>
                         <p class="sub-heading bottom-line text-color-lightBlue wow fadeInUp" data-wow-delay="0.1s">
-                            Following are the services we provide.</p>
+                            We build technology and we build teams &mdash; two ways to work with us.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.2s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/soft_dev.png">
+
+                    <ul class="nav nav-tabs service_tabs justifyCenter mb40" id="serviceTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="it-services-tab" data-toggle="tab" href="#it-services"
+                                role="tab" aria-controls="it-services" aria-selected="true">IT Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="staffing-tab" data-toggle="tab" href="#staffing" role="tab"
+                                aria-controls="staffing" aria-selected="false">IT Staffing &amp; Recruiting</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="serviceTabContent">
+                        <div class="tab-pane fade show active" id="it-services" role="tabpanel"
+                            aria-labelledby="it-services-tab">
+                            <div class="service_list">
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-web-dev"
+                                        role="button" aria-expanded="false" aria-controls="svc-web-dev">
+                                        <span class="service_list_icon"><img alt="" src="img/soft_dev.png"></span>
+                                        <span class="service_list_title">Web Development</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-web-dev">
+                                        <p class="text-color-lightBlue">We design and build responsive, scalable
+                                            websites and web applications tailored to your business needs, from
+                                            custom builds to CMS-based solutions.</p>
+                                    </div>
                                 </div>
-                                <p class="mb10 service_title">Web Development</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-mobile"
+                                        role="button" aria-expanded="false" aria-controls="svc-mobile">
+                                        <span class="service_list_icon"><img alt="" src="img/mobile_app.png"></span>
+                                        <span class="service_list_title">Mobile Applications</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-mobile">
+                                        <p class="text-color-lightBlue">We develop native and cross-platform mobile
+                                            apps for iOS and Android that deliver seamless, reliable user
+                                            experiences.</p>
+                                    </div>
+                                </div>
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-data"
+                                        role="button" aria-expanded="false" aria-controls="svc-data">
+                                        <span class="service_list_icon"><img alt="" src="img/data_mng.png"></span>
+                                        <span class="service_list_title">Data Management</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-data">
+                                        <p class="text-color-lightBlue">We help you organize, secure, and make sense
+                                            of your data with robust database design, migration, and analytics
+                                            solutions.</p>
+                                    </div>
+                                </div>
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-design"
+                                        role="button" aria-expanded="false" aria-controls="svc-design">
+                                        <span class="service_list_icon"><img alt="" src="img/saas.png"></span>
+                                        <span class="service_list_title">Product Design</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-design">
+                                        <p class="text-color-lightBlue">We craft intuitive UI/UX designs that turn
+                                            your product ideas into user-friendly, polished digital experiences.</p>
+                                    </div>
+                                </div>
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-support"
+                                        role="button" aria-expanded="false" aria-controls="svc-support">
+                                        <span class="service_list_icon"><img alt="" src="img/consulting.png"></span>
+                                        <span class="service_list_title">Support and Maintenance</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-support">
+                                        <p class="text-color-lightBlue">We provide ongoing technical support and
+                                            maintenance to keep your systems running smoothly, securely, and
+                                            up to date.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/data_mng.png">
+
+                        <div class="tab-pane fade" id="staffing" role="tabpanel" aria-labelledby="staffing-tab">
+                            <div class="service_list">
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-contract"
+                                        role="button" aria-expanded="false" aria-controls="svc-contract">
+                                        <span class="service_list_icon"><img alt="" src="img/analytics.png"></span>
+                                        <span class="service_list_title">Contract Staffing</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-contract">
+                                        <p class="text-color-lightBlue">We provide short- and long-term contract IT
+                                            professionals to fill immediate gaps on your team without the overhead of
+                                            a full-time hire.</p>
+                                    </div>
                                 </div>
-                                <p class="mb10 service_title">Data Management</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-direct-hire"
+                                        role="button" aria-expanded="false" aria-controls="svc-direct-hire">
+                                        <span class="service_list_icon"><img alt="" src="img/analytics.png"></span>
+                                        <span class="service_list_title">Direct-Hire Placement</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-direct-hire">
+                                        <p class="text-color-lightBlue">We source, screen, and place permanent IT
+                                            talent that fits your team's technical needs and company culture.</p>
+                                    </div>
+                                </div>
+                                <div class="service_list_item">
+                                    <a class="service_list_header" data-toggle="collapse" href="#svc-sourcing"
+                                        role="button" aria-expanded="false" aria-controls="svc-sourcing">
+                                        <span class="service_list_icon"><img alt="" src="img/analytics.png"></span>
+                                        <span class="service_list_title">Candidate Sourcing &amp; Screening</span>
+                                        <span class="service_list_caret">&#9660;</span>
+                                    </a>
+                                    <div class="collapse service_list_body" id="svc-sourcing">
+                                        <p class="text-color-lightBlue">We handle the entire hiring pipeline &mdash;
+                                            sourcing, technical screening, and vetting &mdash; so you only meet
+                                            qualified candidates.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.2s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/analytics.png">
-                                </div>
-                                <p class="mb10 service_title">IT Staffing and Recruiting</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInLeft" data-wow-delay="0.4s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/mobile_app.png">
-                                </div>
-                                <p class="mb10 service_title">Mobile Applications</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/saas.png">
-                                </div>
-                                <p class="mb10 service_title">Product Design</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 wow fadeInRight" data-wow-delay="0.4s">
-                            <div class="service_item">
-                                <div class="service_icon_wrapper mb20">
-                                    <img alt="" class="service_icon" src="img/consulting.png">
-                                </div>
-                                <p class="mb10 service_title">Support and Maintenance</p>
-                                <!--                             <p class="text-color-lightBlue mb10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                            <a class="line-animation" href="#.">Learn More</a> -->
+                    </div>
+
+                    <div class="row justifyCenter">
+                        <div class="col-lg-8 col-12">
+                            <div class="employer_callout textCenter wow fadeInUp" data-wow-delay="0.1s">
+                                <h3 class="text-color-dark">Hiring? We Can Help.</h3>
+                                <p class="text-color-lightBlue mb20">Need to staff a project fast? We source and place
+                                    vetted developers, mainframe engineers, DevOps specialists, and other IT talent
+                                    &mdash; on contract or direct-hire. Looking for your next role instead?
+                                    <a href="job_seekers.html">See our current openings</a>.</p>
+                                <a class="btn btn-primary" href="contact.html">Request Talent</a>
                             </div>
                         </div>
                     </div>
@@ -206,11 +277,7 @@
                             <div class="col-md-12 col-sm-12 col-12">
                                 <div class="footer_about">
                                     <h2 class="footer_title">About Aanvi InfoPharma Inc.</h2>
-                                    <p class="footer_about_content">Aanvi InfoPharma Inc. is a leading tech support
-                                        brand which renders non-stop support to its consumers and businesses. Since our
-                                        humble beginning, We have primarily focused on making technology simpler for the
-                                        world by delivering turnkey technical support solutions for computers and small
-                                        business users.</p>
+                                    <p class="footer_about_content">Aanvi InfoPharma Inc. is a full-service IT solutions and IT staffing firm. We deliver turnkey technical support, software development, and IT infrastructure solutions for businesses, and we connect skilled IT professionals with the companies that need them through contract staffing and direct-hire placement.</p>
                                     <!-- <ul class="footer_social_area">
                                     <li>
                                         <a href="#.">
@@ -318,6 +385,18 @@
 
         <!-- Main Script -->
         <script src="js/script.js"></script>
+
+        <!-- Activate service tab from URL hash (e.g. services.html#staffing) -->
+        <script>
+            (function () {
+                var hash = window.location.hash;
+                if (hash === '#staffing') {
+                    $('#staffing-tab').tab('show');
+                } else if (hash === '#it-services') {
+                    $('#it-services-tab').tab('show');
+                }
+            })();
+        </script>
     </body>
 
 </html>
